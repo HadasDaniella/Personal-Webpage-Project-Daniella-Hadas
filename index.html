@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniella Hadas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(20deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .wave-emoji {
+      display: inline-block;
+      animation: wave 1.5s ease-in-out infinite;
+      transform-origin: 70% 70%;
+    }
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      width: 300px;
+    }
+    .grid-gallery img {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    .skill-section {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 60px;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .skill-section .text {
+      max-width: 400px;
+    }
+    @media (max-width: 768px) {
+      .skill-section {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-container">
+    <div class="title-text">
+      <h1>I'm Daniella</h1>
+      <h2>scuba diver & passionate home cook</h2>
+    </div>
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Daniella profile picture">
+      <h2>Hello! <span class="wave-emoji">👋</span></h2>
+      <p class="intro">
+        I’m Daniella,<br>
+        my world revolves around the ocean and the kitchen.<br>
+        Whether I’m exploring the depths of the sea<br>
+        or preparing dishes from the heart,
+        I bring passion and curiosity to everything I do.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="skills">
+      <h2>My Hobbies</h2>
+
+      <div class="skill-section">
+        <div class="grid-gallery">
+          <img src="images/ktzizot.jpg" alt="Cooking 1">
+          <img src="images/kube_selek.jpg" alt="Cooking 2">
+          <img src="images/megulgalot.jpg" alt="Cooking 3">
+          <img src="images/memulaim.jpg" alt="Cooking 4">
+        </div>
+        <div class="text">
+          <h3>Cooking</h3>
+          <p>Cooking is how I show love. I enjoy creating meals that tell a story and bring people together.</p>
+        </div>
+      </div>
+
+      <div class="skill-section">
+        <div class="grid-gallery">
+          <img src="images/dive1.jpg" alt="Diving 1">
+          <img src="images/dive2.jpg" alt="Diving 2">
+          <img src="images/dive3.jpg" alt="Diving 3">
+          <img src="images/dive4.jpg" alt="Diving 4">
+        </div>
+        <div class="text">
+          <h3>Diving</h3>
+          <p>Underwater is where I find peace. I dive every chance I get, especially in the Red Sea, my second home.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="contact-me">
+      <h2>Get in Touch</h2>
+      <p class="contact-message">Want to talk food, diving, or both? I'd love to hear from you!</p>
+      <a class="btn" href="mailto:danihadas@gmail.com">Send me an email</a>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/daniella-hadas-56a78a2a3/" target="_blank">LinkedIn</a>
+    <a class="footer-link" href="https://www.instagram.com/dani__290/" target="_blank">Instagram</a>
+    <p class="copyright">© 2025 Daniella Hadas</p>
+  </div>
+</body>
+</html>
